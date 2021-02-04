@@ -1,0 +1,7 @@
+// run in console
+
+%load_ext memory_profiler
+
+from bmi_lists import calc_bmi_lists
+
+%mprun -f calc_bmi_lists calc_bmi_lists(sample_indices, hts, wts)
